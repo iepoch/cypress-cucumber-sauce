@@ -3,5 +3,6 @@
       "TAGS": "not @ignore or @focus"
   },
     "ignoreTestFiles": "*.js",
-    "testFiles": "**/*.{feature, features}"
+    "testFiles": "**/*.{feature, features}",
+    "integrationFolder": "smoke"
 }

@@ -15,7 +15,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cy:run": "cypress run",
+    "cy:report": "node ./cypress/report.js",
+    "cy:test": "cypress run --config integrationFolder=smoke,videoUploadOnPasses=false"
   },
   "eslintConfig": {
     "extends": [
@@ -37,7 +40,9 @@
   },
   "devDependencies": {
     "cypress": "^8.2.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.2.0",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
   }
 }
