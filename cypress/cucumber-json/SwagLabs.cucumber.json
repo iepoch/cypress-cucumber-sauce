@@ -8,6 +8,103 @@
     "uri": "SwagLabs.feature",
     "elements": [
       {
+        "id": "saucedemo-login---cypress-cucumber-automation;login-as-a-user-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login as a user with valid credentials",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I navigate to the SwagLabs - Saucedemo page",
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I should now see the login screen",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I enter a username and password",
+            "result": {
+              "status": "passed",
+              "duration": 20892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can click the login button to login",
+            "result": {
+              "status": "passed",
+              "duration": 127000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Products"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Now I should see the Products page",
+            "result": {
+              "status": "passed",
+              "duration": 10057000000
+            }
+          }
+        ]
+      },
+      {
         "id": "saucedemo-login---cypress-cucumber-automation;loging-as-a-user-with-invalid-credentials",
         "keyword": "Scenario",
         "line": 18,
@@ -27,7 +124,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 561000000
+              "duration": 149000000
             }
           },
           {
@@ -37,7 +134,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 14000000
             }
           },
           {
@@ -64,7 +161,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 20967000000
+              "duration": 20879000000
             }
           },
           {
@@ -74,7 +171,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 96000000
             }
           },
           {
@@ -84,7 +181,7 @@
             "name": "Now I should see - Epic sadface: Sorry, this user has been locked out.",
             "result": {
               "status": "passed",
-              "duration": 1046000000
+              "duration": 1032000000
             }
           }
         ]

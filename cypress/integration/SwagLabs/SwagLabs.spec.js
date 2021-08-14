@@ -5,10 +5,10 @@ import {
   And,
   Before,
 } from "cypress-cucumber-preprocessor/steps";
-import login from "../POM/Pages/ActivitiesLogin/login";
+import login from "../POM/Pages/SwagLabs/login";
 
 Given("I navigate to the SwagLabs - Saucedemo page", () => {
-  cy.visit("https://www.saucedemo.com");
+  cy.visit("https://www.saucedemo.com/");
 });
 
 Given("I should now see the login screen", () => {
