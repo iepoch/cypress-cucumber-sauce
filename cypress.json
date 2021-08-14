@@ -4,5 +4,13 @@
   },
     "ignoreTestFiles": "*.js",
     "testFiles": "**/*.{feature, features}",
-    "integrationFolder": "smoke"
+    "screenshotsFolder": "./cypress/screenshots",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "video": false,
+    "chromeWebSecurity": false,
+    "firefoxWebSecurity": false,
+    "trashAssetsBeforeRuns": true,
+    "defaultCommandTimeout": 60000,
+    "pageLoadTimeout": 80000
 }

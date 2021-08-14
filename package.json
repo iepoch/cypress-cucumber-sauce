@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -14,10 +11,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "test": "failsafe cy:clean cy:run cy:report",
+    "test:open": "failsafe x-clean cy:open",
+    "cy:open": "cypress open",
+     "x-clean":"cross-env RTL_SKIP_AUTO_CLEANUP=true jest",
     "cy:run": "cypress run",
     "cy:report": "node ./cypress/report.js",
+    "cy:clean": "rimraf ./cypress/cucumber-report  ./cypress/cucumber-json",
     "cy:test": "cypress run --config integrationFolder=smoke,videoUploadOnPasses=false"
   },
   "eslintConfig": {
@@ -39,10 +39,13 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "cypress": "^8.2.0",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.2.0",
     "cypress-xpath": "^1.6.2",
-    "multiple-cucumber-html-reporter": "^1.18.0"
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "npm-failsafe": "^0.4.3",
+    "rimraf": "^3.0.2"
   }
 }
