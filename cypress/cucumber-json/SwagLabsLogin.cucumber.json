@@ -5,7 +5,7 @@
     "line": 1,
     "id": "saucedemo-login---cypress-cucumber-automation",
     "tags": [],
-    "uri": "SwagLabs.feature",
+    "uri": "SwagLabsLogin.feature",
     "elements": [
       {
         "id": "saucedemo-login---cypress-cucumber-automation;login-as-a-user-with-valid-credentials",
@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 208000000
+              "duration": 915000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 21000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 20892000000
+              "duration": 832000000
             }
           },
           {
@@ -74,7 +74,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 113000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "Now I should see the Products page",
             "result": {
               "status": "passed",
-              "duration": 10057000000
+              "duration": 11000000
             }
           }
         ]
@@ -124,7 +124,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 281000000
             }
           },
           {
@@ -134,7 +134,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 22000000
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 20879000000
+              "duration": 829000000
             }
           },
           {
@@ -171,7 +171,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 92000000
             }
           },
           {
@@ -181,7 +181,7 @@
             "name": "Now I should see - Epic sadface: Sorry, this user has been locked out.",
             "result": {
               "status": "passed",
-              "duration": 1032000000
+              "duration": 16000000
             }
           }
         ]

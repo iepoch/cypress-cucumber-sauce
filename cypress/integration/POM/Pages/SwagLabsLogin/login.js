@@ -3,16 +3,14 @@ class LoginPage {
     return cy.get("[data-test=login-button]");
   }
   pageName(title) {
-    cy.wait(10000);
     return cy.contains(title).should("be.visible");
   }
   enterUsernamePassword(username, password) {
-    cy.wait(10000);
     cy.get("[data-test=username]").clear();
     cy.get("[data-test=username]")
       .type(username)
       .should("have.value", username);
-    cy.wait(10000);
+
     cy.get("[data-test=password]").clear();
     cy.get("[data-test=password]")
       .type(password)
@@ -22,7 +20,6 @@ class LoginPage {
     return cy.get("[data-test=login-button]").click();
   }
   invalidUserError() {
-    cy.wait(1000);
     return cy
       .get("[data-test=error]")
       .contains("Epic sadface: Sorry, this user has been locked out.")

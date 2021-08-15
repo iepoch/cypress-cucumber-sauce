@@ -14,7 +14,7 @@
     "test": "failsafe cy:clean cy:run cy:report",
     "test:open": "failsafe x-clean cy:open",
     "cy:open": "cypress open",
-     "x-clean":"cross-env RTL_SKIP_AUTO_CLEANUP=true jest",
+    "x-clean": "cross-env RTL_SKIP_AUTO_CLEANUP=true jest",
     "cy:run": "cypress run",
     "cy:report": "node ./cypress/report.js",
     "cy:clean": "rimraf ./cypress/cucumber-report  ./cypress/cucumber-json",
@@ -44,6 +44,7 @@
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.2.0",
     "cypress-xpath": "^1.6.2",
+    "eslint-plugin-cypress": "^2.11.3",
     "multiple-cucumber-html-reporter": "^1.18.0",
     "npm-failsafe": "^0.4.3",
     "rimraf": "^3.0.2"

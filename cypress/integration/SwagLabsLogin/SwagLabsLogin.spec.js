@@ -5,7 +5,7 @@ import {
   And,
   Before,
 } from "cypress-cucumber-preprocessor/steps";
-import login from "../POM/Pages/SwagLabs/login";
+import login from "../POM/Pages/SwagLabsLogin/login";
 
 Given("I navigate to the SwagLabs - Saucedemo page", () => {
   cy.visit("https://www.saucedemo.com/");
