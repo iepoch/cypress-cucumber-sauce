@@ -36,3 +36,7 @@ And("I am on the Products screen", (datatable) => {
 Then("I select the drop down and sort by Price - Low to High", () => {
   products.sortByPrice();
 });
+
+And("The prices are now sorted", () => {
+  products.pricesSorted();
+});

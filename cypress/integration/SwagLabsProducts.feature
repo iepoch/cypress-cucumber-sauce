@@ -4,7 +4,7 @@ Feature: Saucedemo Product Page Validation
         Given I navigate to the SwagLabs - Saucedemo page
         When  I enter a username and password
          | username      | password        |
-         | problem_user  | secret_sauce    |
+         | standard_user | secret_sauce    |
 
         Then I can click the login button to login
         
@@ -15,3 +15,4 @@ Feature: Saucedemo Product Page Validation
            | title    |
            | Products |
         Then I select the drop down and sort by Price - Low to High
+        And The prices are now sorted
