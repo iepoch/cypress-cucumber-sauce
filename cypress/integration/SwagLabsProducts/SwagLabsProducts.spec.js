@@ -33,6 +33,9 @@ And("I am on the Products screen", (datatable) => {
   });
 });
 
+When("I get the orginal prices on the screen", () => {
+  products.unsortedPrice();
+});
 Then("I select the drop down and sort by Price - Low to High", () => {
   products.sortByPrice();
 });

@@ -14,5 +14,6 @@ Feature: Saucedemo Product Page Validation
         And I am on the Products screen
            | title    |
            | Products |
+        When I get the orginal prices on the screen
         Then I select the drop down and sort by Price - Low to High
         And The prices are now sorted

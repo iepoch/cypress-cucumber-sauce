@@ -1,4 +1,6 @@
+let unsortedPrices = [];
 class ProductsPage {
+  constructor() {}
   screen(title) {
     return cy.contains(title).should("be.visible");
   }
@@ -7,6 +9,18 @@ class ProductsPage {
     cy.get("[data-test=product_sort_container]").should("be.visible");
     cy.get("[data-test=product_sort_container]").select("Price (low to high)");
     cy.get("[data-test=product_sort_container]").should("have.value", "lohi");
+  }
+
+  unsortedPrice() {
+    cy.get("#inventory_container").within(() => {
+      cy.get(".inventory_item_description > .pricebar .inventory_item_price")
+        .each(($el, $index, $lis) => {
+          return "something else";
+        })
+        .then(($lis) => {
+          return (unsortedPrices = $lis.text().split("$"));
+        });
+    });
   }
 
   pricesSorted() {
@@ -18,8 +32,7 @@ class ProductsPage {
         })
         .then(($lis) => {
           const sortedPrice = $lis.text().split("$");
-          const unsortedPrice = sortedPrice.slice().sort();
-          expect(sortedPrice, "Prices are sorted").to.not.equal(unsortedPrice);
+          expect(sortedPrice, "Prices are sorted").to.not.equal(unsortedPrices);
         });
     });
   }
