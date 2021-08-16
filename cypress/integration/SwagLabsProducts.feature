@@ -4,7 +4,7 @@ Feature: Saucedemo Product Page Validation
         Given I navigate to the SwagLabs - Saucedemo page
         When  I enter a username and password
          | username      | password        |
-         | standard_user | secret_sauce    |
+         | problem_user  | secret_sauce    |
 
         Then I can click the login button to login
         
