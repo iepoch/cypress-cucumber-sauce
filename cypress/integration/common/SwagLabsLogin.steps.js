@@ -1,13 +1,5 @@
-import {
-  Given,
-  When,
-  Then,
-  And,
-  Before,
-} from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import login from "../POM/Pages/SwagLabsLogin/login";
-
-import products from "../POM/Pages/SwagLabsProducts/products";
 
 Given("I navigate to the SwagLabs - Saucedemo page", () => {
   cy.visit("https://www.saucedemo.com/");
@@ -26,20 +18,15 @@ When("I enter a username and password", (datatable) => {
 Then("I can click the login button to login", () => {
   login.clickLoginButton();
 });
-
-And("I am on the Products screen", (datatable) => {
+And("Now I should see the Products page", (datatable) => {
   datatable.hashes().forEach((el) => {
-    products.screen(el.title);
+    login.pageName(el.title);
   });
 });
 
-When("I get the orginal prices on the screen", () => {
-  products.unsortedPrice();
-});
-Then("I select the drop down and sort by Price - Low to High", () => {
-  products.sortByPrice();
-});
-
-And("The prices are now sorted", () => {
-  products.pricesSorted();
-});
+And(
+  "Now I should see - Epic sadface: Sorry, this user has been locked out.",
+  () => {
+    login.invalidUserError();
+  }
+);

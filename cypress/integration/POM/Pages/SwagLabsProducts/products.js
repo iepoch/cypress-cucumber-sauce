@@ -1,6 +1,5 @@
 let unsortedPrices = [];
 class ProductsPage {
-  constructor() {}
   screen(title) {
     return cy.contains(title).should("be.visible");
   }
