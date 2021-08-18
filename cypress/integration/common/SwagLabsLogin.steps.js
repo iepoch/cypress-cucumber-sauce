@@ -24,9 +24,6 @@ And("Now I should see the Products page", (datatable) => {
   });
 });
 
-And(
-  "Now I should see - Epic sadface: Sorry, this user has been locked out.",
-  () => {
-    login.invalidUserError();
-  }
-);
+And("Now I should see - {string}", (text) => {
+  login.invalidUserError(text);
+});

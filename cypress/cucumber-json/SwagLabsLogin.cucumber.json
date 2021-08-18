@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 192000000
+              "duration": 129000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 10000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 958000000
+              "duration": 911000000
             }
           },
           {
@@ -74,7 +74,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 215000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "Now I should see the Products page",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 16000000
             }
           }
         ]
@@ -124,7 +124,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 333000000
+              "duration": 229000000
             }
           },
           {
@@ -134,7 +134,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 7000000
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 975000000
+              "duration": 957000000
             }
           },
           {
@@ -171,17 +171,17 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 98000000
+              "duration": 92000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "Now I should see - Epic sadface: Sorry, this user has been locked out.",
+            "name": "Now I should see - \"Epic sadface: Sorry, this user has been locked out.\"",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 12000000
             }
           }
         ]
@@ -201,7 +201,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 108000000
+              "duration": 99000000
             }
           },
           {
@@ -211,7 +211,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 7000000
             }
           },
           {
@@ -226,7 +226,7 @@
                   },
                   {
                     "cells": [
-                      "locked_out_user",
+                      "bad_username",
                       "secret_sauce"
                     ]
                   }
@@ -238,7 +238,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 965000000
+              "duration": 901000000
             }
           },
           {
@@ -248,7 +248,17 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Now I should see - \"Epic sadface: Username and password do not match any user in this service\"",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
             }
           }
         ]
