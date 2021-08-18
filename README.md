@@ -20,7 +20,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/iepoch/serenity-playwright-cucumber/main/images/Cypress-Cucumber-POM.png)
+![screenshot](https://raw.githubusercontent.com/iepoch/cypress-cucumber-sauce/main/images/Cypress-Cucumber-POM.png)
 
 ## Key Features
 
