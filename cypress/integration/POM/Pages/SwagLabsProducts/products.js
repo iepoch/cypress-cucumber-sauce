@@ -36,27 +36,8 @@ class ProductsPage {
     });
   }
 
-  checkAllProducts() {
-    cy.get("#inventory_container").within(() => {
-      cy.get(".inventory_item_name")
-        .each(($el, $index, $lis) => {
-          return "something else";
-        })
-        .then(($lis) => {
-          expect($lis.eq(0), "first item").to.contain("Sauce Labs Backpack");
-          expect($lis.eq(1), "second item").to.contain("Sauce Labs Bike Light");
-          expect($lis.eq(2), "third item").to.contain(
-            "Sauce Labs Bolt T-Shirt"
-          );
-          expect($lis.eq(3), "fouth item").to.contain(
-            "Sauce Labs Fleece Jacket"
-          );
-          expect($lis.eq(4), "fith item").to.contain("Sauce Labs Onesie");
-          expect($lis.eq(5), "sixth item").to.contain(
-            "Test.allTheThings() T-Shirt (Red)"
-          );
-        });
-    });
+  checkAllProducts(productlist) {
+    cy.get(".inventory_item_name").contains(productlist);
   }
 }
 

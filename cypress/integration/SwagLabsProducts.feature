@@ -24,3 +24,10 @@ Feature: Saucedemo Product Page Validation
             | title    |
             | Products |
         Then I can validate the items on the page
+            | productlist                       |
+            | Sauce Labs Backpack               |
+            | Sauce Labs Bike Light             |
+            | Sauce Labs Bolt T-Shirt           |
+            | Sauce Labs Fleece Jacket          |
+            | Sauce Labs Onesie                 |
+            | Test.allTheThings() T-Shirt (Red) |

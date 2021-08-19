@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 205000000
             }
           },
           {
@@ -54,7 +54,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 990000000
+              "duration": 943000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 112000000
             }
           },
           {
@@ -89,7 +89,7 @@
             "name": "I am on the Products screen",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 13000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "I get the original prices on the screen",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 24000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "I select the drop down and sort by Price - Low to High",
             "result": {
               "status": "passed",
-              "duration": 202000000
+              "duration": 167000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "The prices are now sorted",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 39000000
             }
           }
         ]
@@ -139,7 +139,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 258000000
+              "duration": 149000000
             }
           },
           {
@@ -166,7 +166,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 937000000
+              "duration": 958000000
             }
           },
           {
@@ -176,7 +176,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 201000000
             }
           },
           {
@@ -205,13 +205,53 @@
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "productlist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Backpack"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bike Light"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bolt T-Shirt"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Fleece Jacket"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Onesie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test.allTheThings() T-Shirt (Red)"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "Then ",
             "line": 26,
             "name": "I can validate the items on the page",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 109000000
             }
           }
         ]

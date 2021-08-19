@@ -7,6 +7,8 @@ And("I am on the Products screen", (datatable) => {
   });
 });
 
-Then("I can validate the items on the page", () => {
-  products.checkAllProducts();
-});
+// Then("I can validate the items on the page", (datatable) => {
+//   datatable.hashes().forEach((el) => {
+//     products.checkAllProducts(el.productlist);
+//   });
+// });

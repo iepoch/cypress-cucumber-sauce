@@ -14,8 +14,11 @@ Then("I select the drop down and sort by Price - Low to High", () => {
   products.sortByPrice();
 });
 
-Then("I can validate the items on the page", () => {
-  products.checkAllProducts();
+Then("I can validate the items on the page", (datatable) => {
+  datatable.hashes().forEach((el) => {
+    // cy.get(".inventory_item_name").contains(el.productlist);
+    products.checkAllProducts(el.productlist);
+  });
 });
 
 And("The prices are now sorted", () => {
