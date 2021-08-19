@@ -9,6 +9,7 @@ Feature: Saucedemo
         Then I can click the login button to login
 
     Scenario: Check the Product Details Screen
-# And I am on the product details screen
-#     | title    |
-#     | Products |
+        And I am on the Products screen
+            | title    |
+            | Products |
+        Then I can validate the items on the page

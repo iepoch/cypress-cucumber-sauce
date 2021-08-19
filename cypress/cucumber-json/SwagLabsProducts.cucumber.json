@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 239000000
             }
           },
           {
@@ -42,7 +42,7 @@
                   },
                   {
                     "cells": [
-                      "problem_user",
+                      "standard_user",
                       "secret_sauce"
                     ]
                   }
@@ -54,7 +54,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 936000000
+              "duration": 990000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 122000000
             }
           },
           {
@@ -89,7 +89,7 @@
             "name": "I am on the Products screen",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 15000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "I get the original prices on the screen",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 22000000
             }
           },
           {
@@ -108,9 +108,8 @@
             "line": 18,
             "name": "I select the drop down and sort by Price - Low to High",
             "result": {
-              "status": "failed",
-              "duration": 58264000000,
-              "error_message": "TypeError: Cannot read property '5' of undefined\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:60:57)"
+              "status": "passed",
+              "duration": 202000000
             }
           },
           {
@@ -119,7 +118,100 @@
             "line": 19,
             "name": "The prices are now sorted",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 67000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saucedemo-product-page-validation;check-the-product-details-screen",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Check the Product Details Screen",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the SwagLabs - Saucedemo page",
+            "result": {
+              "status": "passed",
+              "duration": 258000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter a username and password",
+            "result": {
+              "status": "passed",
+              "duration": 937000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can click the login button to login",
+            "result": {
+              "status": "passed",
+              "duration": 125000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Products"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I am on the Products screen",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I can validate the items on the page",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
             }
           }
         ]

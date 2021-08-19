@@ -2,7 +2,7 @@ import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import login from "../POM/Pages/SwagLabsLogin/login";
 
 Given("I navigate to the SwagLabs - Saucedemo page", () => {
-  cy.visit("https://www.saucedemo.com/");
+  cy.visit("");
 });
 
 Given("I should now see the login screen", () => {

@@ -21,8 +21,8 @@
             "line": 4,
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
-              "status": "undefined",
-              "duration": 74000000
+              "status": "passed",
+              "duration": 135000000
             }
           },
           {
@@ -31,7 +31,8 @@
             "line": 5,
             "name": "I should now see the login screen",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13000000
             }
           },
           {
@@ -57,7 +58,8 @@
             "line": 6,
             "name": "I enter a username and password",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 795000000
             }
           },
           {
@@ -66,7 +68,8 @@
             "line": 9,
             "name": "I can click the login button to login",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 112000000
             }
           },
           {
@@ -88,7 +91,17 @@
             ],
             "keyword": "And ",
             "line": 12,
-            "name": "I am on the product details screen",
+            "name": "I am on the Products screen",
+            "result": {
+              "status": "undefined",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I can validate the items on the page",
             "result": {
               "status": "skipped"
             }

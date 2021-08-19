@@ -14,6 +14,10 @@ Then("I select the drop down and sort by Price - Low to High", () => {
   products.sortByPrice();
 });
 
+Then("I can validate the items on the page", () => {
+  products.checkAllProducts();
+});
+
 And("The prices are now sorted", () => {
   products.pricesSorted();
 });

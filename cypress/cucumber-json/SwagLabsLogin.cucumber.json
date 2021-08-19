@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 205000000
+              "duration": 368000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 22000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 977000000
+              "duration": 817000000
             }
           },
           {
@@ -74,7 +74,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 168000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "Now I should see the Products page",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 17000000
             }
           }
         ]
@@ -134,7 +134,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 980000000
+              "duration": 797000000
             }
           },
           {
@@ -171,7 +171,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 87000000
             }
           },
           {
@@ -181,7 +181,7 @@
             "name": "Now I should see - \"Epic sadface: Sorry, this user has been locked out.\"",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 20000000
             }
           }
         ]
@@ -201,7 +201,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 102000000
             }
           },
           {
@@ -211,7 +211,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           },
           {
@@ -238,7 +238,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 914000000
+              "duration": 778000000
             }
           },
           {
@@ -248,7 +248,7 @@
             "name": "I can click the login button to login",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 91000000
             }
           },
           {
@@ -258,7 +258,7 @@
             "name": "Now I should see - \"Epic sadface: Username and password do not match any user in this service\"",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 13000000
             }
           }
         ]
