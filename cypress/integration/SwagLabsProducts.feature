@@ -19,7 +19,7 @@ Feature: Saucedemo Product Page Validation
         And The prices are now sorted
 
 
-    Scenario: Check the Product Details Screen
+    Scenario: Check the Product Page Items Are Valid
         And I am on the Products screen
             | title    |
             | Products |
