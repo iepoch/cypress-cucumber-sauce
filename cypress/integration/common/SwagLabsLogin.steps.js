@@ -21,10 +21,8 @@ When('I enter a username and password', datatable => {
 	});
 });
 
-Then('I can click the login button to login', () => {
-	login.clickLoginButton();
-});
 And('Now I should see the Products page', datatable => {
+	login.reuseableLogin();
 	datatable.hashes().forEach(el => {
 		login.pageName(el.title);
 	});
