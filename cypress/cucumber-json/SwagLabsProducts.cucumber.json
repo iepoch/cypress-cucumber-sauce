@@ -1,0 +1,207 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Saucedemo Product Page Validation",
+    "line": 1,
+    "id": "saucedemo-product-page-validation",
+    "tags": [],
+    "uri": "SwagLabsProducts.feature",
+    "elements": [
+      {
+        "id": "saucedemo-product-page-validation;sort-by-price-on-product-page",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Sort By Price on Product Page",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the SwagLabs - Saucedemo page",
+            "result": {
+              "status": "passed",
+              "duration": 338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I reuse my login to login to the page",
+            "result": {
+              "status": "passed",
+              "duration": 251000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Products"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I am on the Products screen",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I get the original prices on the screen",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I select the drop down and sort by Price - Low to High",
+            "result": {
+              "status": "passed",
+              "duration": 187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "The prices are now sorted",
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saucedemo-product-page-validation;check-the-product-page-items-are-valid",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Check the Product Page Items Are Valid",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the SwagLabs - Saucedemo page",
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I reuse my login to login to the page",
+            "result": {
+              "status": "passed",
+              "duration": 229000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Products"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I am on the Products screen",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "productlist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Backpack"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bike Light"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bolt T-Shirt"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Fleece Jacket"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Onesie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test.allTheThings() T-Shirt (Red)"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I can validate the items on the page",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

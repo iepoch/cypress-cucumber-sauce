@@ -19,3 +19,4 @@ import "./commands";
 // Alternatively you can use CommonJS syntax:
 require("cypress-xpath");
 // require('./commands')
+Cypress.Cookies.preserveOnce("_cypress.initial", "true");

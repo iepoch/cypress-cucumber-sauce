@@ -2,11 +2,10 @@ Feature: Saucedemo Product Page Validation
 
     Background: Login to the page
         Given I navigate to the SwagLabs - Saucedemo page
-        When  I enter a username and password
-            | username      | password     |
-            | standard_user | secret_sauce |
-
-        Then I can click the login button to login
+        And I reuse my login to login to the page
+    #     When  I enter a username and password
+    #         | username      | password     |
+    #         | standard_user | secret_sauce |
 
     @regression
     Scenario: Sort By Price on Product Page

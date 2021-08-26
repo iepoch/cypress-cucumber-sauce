@@ -10,12 +10,12 @@
       {
         "id": "saucedemo-login---cypress-cucumber-automation;login-as-a-user-with-valid-credentials",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 26,
         "name": "Login as a user with valid credentials",
         "tags": [
           {
             "name": "@regression",
-            "line": 5
+            "line": 25
           }
         ],
         "type": "scenario",
@@ -27,17 +27,17 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 1591000000
+              "duration": 225000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 28,
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 8000000
             }
           },
           {
@@ -60,205 +60,11 @@
               }
             ],
             "keyword": "When ",
-            "line": 9,
-            "name": "I enter a username and password",
-            "result": {
-              "status": "passed",
-              "duration": 929000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I can click the login button to login",
-            "result": {
-              "status": "passed",
-              "duration": 147000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "title"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Products"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 13,
-            "name": "Now I should see the Products page",
-            "result": {
-              "status": "passed",
-              "duration": 30000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "saucedemo-login---cypress-cucumber-automation;loging-as-a-user-with-locked-out-credentials",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Loging as a user with locked out credentials",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 17
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 3,
-            "name": "I navigate to the SwagLabs - Saucedemo page",
-            "result": {
-              "status": "passed",
-              "duration": 291000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "I should now see the login screen",
-            "result": {
-              "status": "passed",
-              "duration": 16000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "username",
-                      "password"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "locked_out_user",
-                      "secret_sauce"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 21,
-            "name": "I enter a username and password",
-            "result": {
-              "status": "passed",
-              "duration": 846000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "I can click the login button to login",
-            "result": {
-              "status": "passed",
-              "duration": 90000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "Now I should see - \"Epic sadface: Sorry, this user has been locked out.\"",
-            "result": {
-              "status": "passed",
-              "duration": 16000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "saucedemo-login---cypress-cucumber-automation;loging-in-as-a-user-that-is-invalid-username",
-        "keyword": "Scenario",
-        "line": 28,
-        "name": "Loging in as a user that is invalid username",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 3,
-            "name": "I navigate to the SwagLabs - Saucedemo page",
-            "result": {
-              "status": "passed",
-              "duration": 117000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
             "line": 29,
-            "name": "I should now see the login screen",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "username",
-                      "password"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "bad_username",
-                      "secret_sauce"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 30,
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 792000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "I can click the login button to login",
-            "result": {
-              "status": "passed",
-              "duration": 98000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Now I should see - \"Epic sadface: Username and password do not match any user in this service\"",
-            "result": {
-              "status": "passed",
-              "duration": 17000000
+              "duration": 66000000
             }
           }
         ]
