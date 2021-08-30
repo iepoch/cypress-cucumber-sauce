@@ -12,7 +12,12 @@
   <a href="https://saythanks.io/to/iepoch">
       <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
   </a>
+    <a href="https://www.cypress.io/">
+      <img src="https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg">
+  </a>
 </p>
+
+
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
