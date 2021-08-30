@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 233000000
+              "duration": 2693000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I should now see the login screen",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 30000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "I enter a username and password",
             "result": {
               "status": "passed",
-              "duration": 44000000
+              "duration": 1160000000
             }
           },
           {
@@ -89,7 +89,7 @@
             "name": "Now I should see the Products page",
             "result": {
               "status": "passed",
-              "duration": 334000000
+              "duration": 410000000
             }
           }
         ]
