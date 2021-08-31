@@ -5,11 +5,9 @@ import login from '../POM/Pages/SwagLabsLogin/login';
 And('I reuse my login to login to the page', () => {
 	login.reuseableLogin();
 });
-And('I am on the Products screen', datatable => {
-	datatable.hashes().forEach(el => {
-		products.screen(el.title);
-	});
-});
+// And('Now I should see the {string}', title => {
+// 	products.screen(title);
+// });
 
 When('I get the original prices on the screen', () => {
 	products.unsortedPrice();

@@ -3,7 +3,7 @@ Feature: Saucedemo Login - Cypress-Cucumber Automation
       Given I navigate to the SwagLabs - Saucedemo page
 
    @regression
-   Scenario: Login as a user with valid credentials
+   Scenario Outline: Login as a user with valid credentials
 
       Given I should now see the login screen
       When  I enter a username and password
@@ -12,9 +12,14 @@ Feature: Saucedemo Login - Cypress-Cucumber Automation
       ### Session Testing clears page before it checks title ####
       # This is part of the Scenerio of login However, cy.sesssion() sees it as a second test
       # when cucumber sees it as 1
-      And  Now I should see the Products page
+      And  Now I should see the "<title>"
+
+
+
+
+
+      Examples:
          | title    |
          | Products |
-
 
 

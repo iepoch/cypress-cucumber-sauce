@@ -21,11 +21,9 @@ When('I enter a username and password', datatable => {
 	});
 });
 
-And('Now I should see the Products page', datatable => {
+And('Now I should see the {string}', title => {
 	login.reuseableLogin();
-	datatable.hashes().forEach(el => {
-		login.pageName(el.title);
-	});
+	login.pageName(title);
 });
 
 And('Now I should see - {string}', text => {

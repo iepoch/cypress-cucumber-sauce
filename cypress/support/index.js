@@ -13,10 +13,10 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-import "cypress-cucumber-attach-screenshots-to-failed-steps";
+import 'cypress-cucumber-attach-screenshots-to-failed-steps';
 // Import commands.js using ES2015 syntax:
-import "./commands";
+import './commands';
 // Alternatively you can use CommonJS syntax:
-require("cypress-xpath");
+require('cypress-xpath');
 // require('./commands')
-Cypress.Cookies.preserveOnce("_cypress.initial", "true");
+Cypress.Cookies.preserveOnce('_cypress.initial', 'true');

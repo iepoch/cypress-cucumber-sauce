@@ -8,20 +8,20 @@ Feature: Saucedemo Product Page Validation
     #         | standard_user | secret_sauce |
 
     @regression
-    Scenario: Sort By Price on Product Page
+    Scenario Outline: Sort By Price on Product Page
 
-        And I am on the Products screen
-            | title    |
-            | Products |
+        And Now I should see the "<title>"
         When I get the original prices on the screen
         Then I select the drop down and sort by Price - Low to High
         And The prices are now sorted
 
-
-    Scenario: Check the Product Page Items Are Valid
-        And I am on the Products screen
+        Examples:
             | title    |
             | Products |
+
+
+    Scenario Outline: Check the Product Page Items Are Valid
+        And Now I should see the "<title>"
         Then I can validate the items on the page
             | productlist                       |
             | Sauce Labs Backpack               |
@@ -30,3 +30,7 @@ Feature: Saucedemo Product Page Validation
             | Sauce Labs Fleece Jacket          |
             | Sauce Labs Onesie                 |
             | Test.allTheThings() T-Shirt (Red) |
+
+        Examples:
+            | title    |
+            | Products |
