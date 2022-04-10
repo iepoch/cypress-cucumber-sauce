@@ -27,7 +27,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 758000000
+              "duration": 173000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I reuse my login to login to the page",
             "result": {
               "status": "passed",
-              "duration": 410000000
+              "duration": 197000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "Now I should see the \"Products\"",
             "result": {
               "status": "passed",
-              "duration": 361000000
+              "duration": 262000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "I get the original prices on the screen",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 23000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "I select the drop down and sort by Price - Low to High",
             "result": {
               "status": "passed",
-              "duration": 237000000
+              "duration": 240000000
             }
           },
           {
@@ -77,7 +77,7 @@
             "name": "The prices are now sorted",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 24000000
             }
           }
         ]
@@ -85,7 +85,7 @@
       {
         "id": "saucedemo-product-page-validation;check-the-product-page-items-are-valid",
         "keyword": "Scenario",
-        "line": 36,
+        "line": 38,
         "name": "Check the Product Page Items Are Valid",
         "tags": [],
         "type": "scenario",
@@ -97,7 +97,7 @@
             "name": "I navigate to the SwagLabs - Saucedemo page",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 156000000
             }
           },
           {
@@ -107,7 +107,7 @@
             "name": "I reuse my login to login to the page",
             "result": {
               "status": "passed",
-              "duration": 285000000
+              "duration": 192000000
             }
           },
           {
@@ -117,7 +117,7 @@
             "name": "Now I should see the \"Products\"",
             "result": {
               "status": "passed",
-              "duration": 449000000
+              "duration": 282000000
             }
           },
           {
@@ -167,7 +167,7 @@
             "name": "I can validate the items on the page",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 113000000
             }
           }
         ]

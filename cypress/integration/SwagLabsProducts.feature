@@ -31,6 +31,8 @@ Feature: Saucedemo Product Page Validation
             | Sauce Labs Onesie                 |
             | Test.allTheThings() T-Shirt (Red) |
 
+
+
         Examples:
             | title    |
             | Products |
