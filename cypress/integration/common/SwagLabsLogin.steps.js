@@ -1,4 +1,4 @@
-import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps';
+import { Given, When, And } from 'cypress-cucumber-preprocessor/steps';
 import login from '../POM/Pages/SwagLabsLogin/login';
 
 Given('I navigate to the SwagLabs - Saucedemo page', () => {
