@@ -21,8 +21,20 @@ When('I enter a username and password', datatable => {
 	});
 });
 
+When('a user enters username and password', table => {
+	table.hashes().forEach(user => {
+		loginPage.enterUsernamePassword({
+			username: `${user.username}`,
+			password: `${user.password}`,
+		});
+	});
+});
+
+When('entering in a {string} and {string}', (username, password) => {
+	loginPage.reuseableLogin({ username: username, password: password });
+});
+
 Then('Now I should see the {string}', title => {
-	loginPage.reuseableLogin();
 	loginPage.pageName(title);
 });
 

@@ -16,7 +16,7 @@ Then('I select the drop down and sort by Price - Low to High', () => {
 	productsPage.sortByPrice();
 });
 
-Then('I can validate the items on the page', datatable => {
+And('I can validate the items on the page', datatable => {
 	datatable.hashes().forEach(el => {
 		productsPage.checkAllProducts(el.productlist);
 	});
@@ -24,4 +24,8 @@ Then('I can validate the items on the page', datatable => {
 
 And('The prices are now sorted', () => {
 	productsPage.pricesSorted();
+});
+
+Then('Images have the correct image associated with product', () => {
+	productsPage.checkImage();
 });
