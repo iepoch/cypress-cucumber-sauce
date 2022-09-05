@@ -26,3 +26,4 @@ yarn-debug.log*
 yarn-error.log*
 **/*.mp4
 **/*.png
+yarn.lock

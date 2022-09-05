@@ -1,9 +1,13 @@
 {
-    "cucumberJson":{
-        "generate": true,
-        "outputFolder":"cypress/cucumber-json",
-        "filePrefix":"",
-        "fileSuffix": ".cucumber"
+    "json":{
+        "enabled": false,
+        "output":"cypress/cucumber-json.json"
     },
-    "nonGlobalStepDefinitions": true
+    "stepDefinitions":[
+     "[filepath]/**/*.{js, ts}",
+     "[filepath].{js, ts}",
+     "cypress/e2e/step_definitions/*.steps.{js, ts}"
+
+    ]
+
 }

@@ -34,5 +34,4 @@ class LoginPage {
 	}
 }
 
-const login = new LoginPage();
-export default login;
+module.exports = new LoginPage();

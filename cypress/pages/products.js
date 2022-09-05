@@ -42,5 +42,4 @@ class ProductsPage {
 	}
 }
 
-const products = new ProductsPage();
-export default products;
+module.exports = new ProductsPage();

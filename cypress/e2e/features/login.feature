@@ -12,7 +12,7 @@ Feature: Saucedemo Login - Cypress-Cucumber Automation
       ### Session Testing clears page before it checks title ####
       # This is part of the Scenerio of login However, cy.sesssion() sees it as a second test
       # when cucumber sees it as 1
-      And  Now I should see the "<title>"
+      Then Now I should see the "<title>"
 
 
 

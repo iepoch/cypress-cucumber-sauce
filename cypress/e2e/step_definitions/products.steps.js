@@ -1,27 +1,27 @@
-import { When, Then, And } from 'cypress-cucumber-preprocessor/steps';
-import products from '../POM/Pages/SwagLabsProducts/products';
-import login from '../POM/Pages/SwagLabsLogin/login';
+import { When, Then, And } from '@badeball/cypress-cucumber-preprocessor';
+const productsPage = require('../../pages/products');
+const loginPage = require('../../pages/login');
 
 And('I reuse my login to login to the page', () => {
-	login.reuseableLogin();
+	loginPage.reuseableLogin();
 });
 // And('Now I should see the {string}', title => {
 // 	products.screen(title);
 // });
 
 When('I get the original prices on the screen', () => {
-	products.unsortedPrice();
+	productsPage.unsortedPrice();
 });
 Then('I select the drop down and sort by Price - Low to High', () => {
-	products.sortByPrice();
+	productsPage.sortByPrice();
 });
 
 Then('I can validate the items on the page', datatable => {
 	datatable.hashes().forEach(el => {
-		products.checkAllProducts(el.productlist);
+		productsPage.checkAllProducts(el.productlist);
 	});
 });
 
 And('The prices are now sorted', () => {
-	products.pricesSorted();
+	productsPage.pricesSorted();
 });
