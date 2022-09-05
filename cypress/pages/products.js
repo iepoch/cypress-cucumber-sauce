@@ -42,7 +42,23 @@ class ProductsPage {
 	}
 
 	checkAllProducts(productlist) {
-		cy.get('.inventory_item_name').contains(productlist);
+		cy.get('div.inventory_item_name').contains(productlist);
+	}
+
+	checkImage() {
+		cy.get('div.inventory_list').within(() => {
+			cy.get('div.inventory_item')
+				.each(($el, $index, $lis) => {
+					return 'something else';
+				})
+				.then($lis => {
+					let img = [];
+					for (let i = 0; i <= 5; i++) {
+						img = $lis[i].children[0].firstChild.children[0].currentSrc;
+						expect(img).to.not.contain('404');
+					}
+				});
+		});
 	}
 }
 
