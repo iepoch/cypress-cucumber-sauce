@@ -1,4 +1,9 @@
-import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
+import {
+	Given,
+	When,
+	Then,
+	And,
+} from '@badeball/cypress-cucumber-preprocessor';
 const loginPage = require('../../pages/login');
 
 Given('I navigate to the SwagLabs - Saucedemo page', () => {
@@ -40,4 +45,8 @@ Then('Now I should see the {string}', title => {
 
 Then('Now I should see - {string}', text => {
 	loginPage.invalidUserError(text);
+});
+
+Then('I can also see app-logo', () => {
+	loginPage.appLogo();
 });

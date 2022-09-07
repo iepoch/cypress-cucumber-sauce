@@ -32,6 +32,10 @@ class LoginPage {
 	invalidUserError(text) {
 		return cy.get('h3[data-test=error]').contains(text).should('be.visible');
 	}
+
+	appLogo() {
+		return cy.get('.app_logo').should('be.visible');
+	}
 }
 
 module.exports = new LoginPage();

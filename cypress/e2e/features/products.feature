@@ -2,25 +2,36 @@ Feature: Saucedemo Product Page Validation
 
     Background: Login to the page
         Given I navigate to the SwagLabs - Saucedemo page
-    And I reuse my login to login to the page
+        Then I reuse my login to login to the page
 
 
     @regression
-    Scenario Outline: Sort By Price on Product Page
+    Scenario: Sort By Price on Product Page
 
-        Then Now I should see the "<title>"
+        Then Now I should see the "Products"
         When I get the original prices on the screen
         Then I select the drop down and sort by Price - Low to High
         And The prices are now sorted
 
+    ## This should create 2 Examples. Which becomes 2 Test cases for different sorting by Price ( Reuseable Clearn Code)
+    Scenario: Sort By "<sort>" on Product Page
+
+        Then Now I should see the "Products"
+        When I get the original prices on the screen
+        Then I select the drop down and sort by "<sort>" and "<value>"
+        And The prices are now sorted
+
         Examples:
-            | title    |
-            | Products |
+            | sort                | value |
+            | Price (high to low) | hilo  |
+            | Price (low to high) | lohi  |
+
+
 
 
     Scenario Outline: Check the product page items' title are valid
-        Then Now I should see the "<title>"
-            And I can validate the items on the page
+        Then Now I should see the "Products"
+        And I can validate the items on the page
             | productlist                       |
             | Sauce Labs Backpack               |
             | Sauce Labs Bike Light             |
@@ -31,15 +42,13 @@ Feature: Saucedemo Product Page Validation
 
 
 
-        Examples:
-            | title    |
-            | Products |
 
 
-    Scenario Outline: Check Product Images are not 404 not found images
-        Then Now I should see the "<title>"
-        Then Images have the correct image associated with product
+    Scenario: Check Product Images are not 404 not found images
+        And Now I should see the "Products"
+        And Images have the correct image associated with product
 
-        Examples:
-            | title    |
-            | Products |
+
+
+
+
