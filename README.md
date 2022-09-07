@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A Testing Setup Framework with Cypress - CucumberJS as a Page Object Model.</h4>
+<h4 align="center">A Testing Setup Framework with Cypress V10.7 - CucumberJS as a Page Object Model.</h4>
 
 <p align="center">
   <a href="https://saythanks.io/to/iepoch">
