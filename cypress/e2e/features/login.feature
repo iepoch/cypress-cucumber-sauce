@@ -50,6 +50,7 @@ Feature: Saucedemo Login - Cypress-Cucumber Automation
       Given I should now see the login screen
       When entering in a "<username>" and "<password>"
       Then Now I should see the "<title>"
+      And I can also see app-logo
 
 
       Examples:

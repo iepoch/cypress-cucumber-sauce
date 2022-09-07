@@ -11,6 +11,14 @@ class ProductsPage {
 		cy.get('[data-test=product_sort_container]').should('have.value', 'lohi');
 	}
 
+	// This is a universal method. So you can pass any sort filter name into it with it's value.
+	// Cleaner code
+	sortPrice(sort, value) {
+		cy.get('[data-test=product_sort_container]').should('be.visible');
+		cy.get('[data-test=product_sort_container]').select(sort);
+		cy.get('[data-test=product_sort_container]').should('have.value', value);
+	}
+
 	// I am getting the unsorted prices before I sort the page.
 	unsortedPrice() {
 		cy.get('#inventory_container').within(() => {
@@ -43,6 +51,20 @@ class ProductsPage {
 
 	checkAllProducts(productlist) {
 		cy.get('div.inventory_item_name').contains(productlist);
+	}
+
+	sortAtoZ() {
+		cy.get('.inventory_item_name')
+			.each(($el, $index, $lis) => {
+				return 'unsorted';
+			})
+			.then($lis => {
+				let sorted = [];
+				for (let i = 0; i <= 5; i++) {
+					sorted = $lis[i].innerText;
+					expect(sorted).to.equal($lis[i].innerText);
+				}
+			});
 	}
 
 	checkImage() {
