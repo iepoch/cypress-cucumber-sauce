@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="" alt="Serenity-Playwright-Cucumber" width="200"></a>
+  <a href="" alt="Cypress v10.7 Cucumber and Saucedemo" width="200"></a>
   <br>
- Cypress - Cucumber-JS - Saucedemo
+ Cypress v10.7 - Cucumber-JS - Saucedemo
   <br>
 </h1>
 
