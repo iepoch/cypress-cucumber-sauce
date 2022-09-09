@@ -1,4 +1,5 @@
 let unsortedPrices = [];
+let unsortedProductName = [];
 class ProductsPage {
 	screen(title) {
 		cy.location('pathname').should('eq', '/inventory.html');
@@ -59,11 +60,22 @@ class ProductsPage {
 				return 'unsorted';
 			})
 			.then($lis => {
-				let sorted = [];
-				for (let i = 0; i <= 5; i++) {
-					sorted = $lis[i].innerText;
-					expect(sorted).to.equal($lis[i].innerText);
-				}
+				return (unsortedProductName = $lis.text().split());
+			});
+		cy.log(unsortedProductName);
+	}
+	sortedAtoZ() {
+		cy.get('.inventory_item_name')
+			.each(($el, $index, $lis) => {
+				return 'unsorted';
+			})
+			.then($lis => {
+				const sortedName = $lis.text().split();
+
+				expect(sortedName, 'Name is sorted').to.not.equal(
+					unsortedProductName,
+					'Should not equal unsorted product name'
+				);
 			});
 	}
 
