@@ -18,13 +18,28 @@ Feature: Saucedemo Product Page Validation
 
         Then Now I should see the "Products"
         When I get the original prices on the screen
+        Then Product name is not sorted yet
         Then I select the drop down and sort by "<sort>" and "<value>"
         And The prices are now sorted
+        And The name are now sorted
 
         Examples:
             | sort                | value |
             | Price (high to low) | hilo  |
             | Price (low to high) | lohi  |
+
+
+    Scenario: Sort By "<sort>" on Product Page
+
+        Then Now I should see the "Products"
+        Then Product name is not sorted yet
+        Then I select the drop down and sort by "<sort>" and "<value>"
+        And The name are now sorted
+
+        Examples:
+            | sort          | value |
+            | Name (A to Z) | az    |
+            | Name (Z to A) | za    |
 
 
 

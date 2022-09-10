@@ -28,10 +28,16 @@ Then('I can validate the items on the page', datatable => {
 		productsPage.checkAllProducts(el.productlist);
 	});
 });
+Then('Product name is not sorted yet', () => {
+	productsPage.sortAtoZ();
+});
+
+Then('The name are now sorted', () => {
+	productsPage.sortedAtoZ();
+});
 
 Then('The prices are now sorted', () => {
-	productsPage.pricesSorted();
-	// productsPage.sortAtoZ(); new testing for sortBy
+	productsPage.pricesSorted(); // new testing for sortBy
 });
 
 Then('Images have the correct image associated with product', () => {

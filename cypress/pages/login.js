@@ -1,4 +1,11 @@
-class LoginPage {
+/******
+ * How to extend a page to another page
+ * this can be useful for a base page and is and example how to extend
+ * the page
+ */
+import NavMenuPage from './navigation';
+const menuPage = new NavMenuPage();
+class LoginPage extends NavMenuPage {
 	get screen() {
 		return cy.get('[data-test=login-button]');
 	}
@@ -33,8 +40,13 @@ class LoginPage {
 		return cy.get('h3[data-test=error]').contains(text).should('be.visible');
 	}
 
+	/******
+	 * How to use the extend a page functionality to re-use test
+	 */
 	appLogo() {
-		return cy.get('.app_logo').should('be.visible');
+		menuPage.logo();
+		menuPage.clickMenu();
+		menuPage.signOut();
 	}
 }
 
