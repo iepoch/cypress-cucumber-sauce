@@ -9,7 +9,7 @@ class BasePage {
 		detailsPrice: () => cy.get('.inventory_details_price'),
 		button: () => cy.get('.btn_inventory'),
 		shoppingCart: () => cy.get('#shopping_cart_container'),
-		cartBadge: () => cy.get('.shopping_cart_badge'),
+		cartBadge: () => cy.get('.shopping_cart_link'),
 	};
 
 	name(text) {
@@ -34,11 +34,11 @@ class BasePage {
 	addToCartBtn(item) {
 		return this.elements.button().should('have.text', 'Add to cart').click();
 	}
-	shoppingCart() {
-		return this.elements.shoppingCart().should('contain', 1);
+	shoppingCart(num) {
+		return this.elements.shoppingCart().should('contain', num);
 	}
 	cartBadge() {
-		return this.elements.cartBadge().should('be.empty');
+		return this.elements.cartBadge().should('be.visible');
 	}
 	remove() {
 		return this.elements.button().should('have.text', 'Remove').click();

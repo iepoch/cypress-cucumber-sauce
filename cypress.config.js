@@ -23,7 +23,7 @@ module.exports = defineConfig({
 
 			return config;
 		},
-		baseUrl: 'https://www.saucedemo.com/',
+		baseUrl: 'https://www.saucedemo.com',
 		specPattern: 'cypress/e2e/**/*.{feature, features}',
 	},
 });

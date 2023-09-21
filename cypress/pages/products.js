@@ -89,6 +89,7 @@ class ProductsPage {
 					let img = [];
 					for (let i = 0; i <= 5; i++) {
 						img = $lis[i].children[0].firstChild.children[0].currentSrc;
+						console.log($lis[i])
 						expect(img).to.not.contain('404');
 					}
 				});

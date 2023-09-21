@@ -14,6 +14,7 @@ Feature: Saucedemo Product Page Validation
         Then I can click Add To Cart for "<item>"
         And see 1 item is showing on the cart icon
         Then I can click remove
+        And I can see 1 item is removed on the cart badge
 
 
         Examples:

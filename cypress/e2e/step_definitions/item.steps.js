@@ -18,14 +18,14 @@ Then('I can click Add To Cart for {string}', () => {
 	inventoryPage.addToCartBtn();
 });
 
-Then('see 1 item is showing on the cart icon', () => {
-	inventoryPage.shoppingCart();
+Then('see {int} item is showing on the cart icon', (num) => {
+	inventoryPage.shoppingCart(num);
 });
 
 Then('I can click remove', () => {
 	inventoryPage.remove();
 });
 
-Then('I can see 1 items is removed on the cart badge', () => {
+Then('I can see 1 item is removed on the cart badge', () => {
 	inventoryPage.cartBadge();
 });
